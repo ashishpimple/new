@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .main_bg{
@@ -13,20 +14,23 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 5px;
+
+    
 }
 .form{
     width: 650px;
-    background: black;
-    
-    
-    
-
+    background: transparent;
+    border-radius: 5%;
+    border: 2px solid grey;
+    height: 450px;
 
 }
 
 .form-text{
     text-align: center;
     margin: 0 0 40px 0;
+    color: #fff;
 }
 .form-text h1 span img{
     margin: 0 10px;
@@ -34,13 +38,13 @@
 }
 .form-text h1{
     color: #fff;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 40px;
     margin-bottom: 20px;
 }
 .form-text p{
     color: #fff;
-    font-family: 'Akaya Telivigala', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
 
@@ -52,7 +56,6 @@
 }
 .main-form div input {
     width: 100%;
-    font-family: 'Akaya Telivigala', cursive;
     background: none;
     border: 1px solid #ffca00;;
     font-size: 20px;
@@ -62,8 +65,10 @@
     margin-top: 10px;
 }
 .main-form div select{
-    width: 104%;
-    font-family: 'Akaya Telivigala', cursive;
+    
+    width: 100%;
+    height: 100%;
+    
     background: none;
     border: 1px solid #ffca00;;
     font-size: 20px;
@@ -71,10 +76,11 @@
     outline: none;
     padding: 3px 0 3px 10px;
     margin-top: 10px;
+
 }
 .main-form div span{
     width: 100%;
-    font-family: 'Akaya Telivigala', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 25px;
 }
@@ -84,15 +90,15 @@
     text-align: center;
 }
 #submit input{
-    font-family: 'Akaya Telivigala', cursive;
-    width: 200px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 400px;
     background-color: yellow !important;
     color: black !important;
     transition: all .3s;
 }
 #submit input:hover{
-    font-family: 'Akaya Telivigala', cursive;
-    width: 200px;
+    font-family:Arial, Helvetica, sans-serif ;
+    width: 150px;
     background-color: black !important;
     color: #fff !important;
 }
@@ -103,10 +109,18 @@
 }
 
 
-@media screen and (max-width:710px) {
+@media screen and (width<=885px) {
     .main-form{
         text-align: center;
     }
 }
-
-/* make by ruhul amin */
+@media screen and (width<=410px) {
+    .main-from{
+        text-align: center;
+    }
+}
+@media screen and (width<=420px){
+    .main-form{
+        margin-bottom: 5%;
+    }
+}
